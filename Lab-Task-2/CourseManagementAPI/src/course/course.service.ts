@@ -61,7 +61,7 @@ export class CourseService {
       message: 'Material uploaded successfully',
       courseId: id,
       filename: file.filename,
-      path: file.path.replace(/\\/g, '/'),
+      path: `src/uploads/${file.filename}`,
     };
   }
 
